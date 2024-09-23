@@ -1,6 +1,6 @@
 from datetime import *
 
-date_birth = input('Month/Day/Year:')
+date_birth = input('Введите дату рождения в виде Month/Day/Year:')
 
 try:
     date_birth = datetime.strptime(date_birth, '%m/%d/%Y')

@@ -1,9 +1,8 @@
 from datetime import *
 
-print('')
+
 date_start = input('Введите дату и время отправления поезда в виде Месяц/День/Год Час:Минуты:')
-print('Введите дату и время прибытия поезда в виде Месяц/День/Год Час:Минуты')
-date_finish = input()
+date_finish = input('Введите дату и время прибытия поезда в виде Месяц/День/Год Час:Минуты:')
 
 try:
     datetime_start = datetime.strptime(date_start, '%m/%d/%Y %H:%M')
