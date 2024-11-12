@@ -33,7 +33,7 @@ def game():
             break
 
         computer_move = random.randint(1, 3)
-        count -= computer_move
+        count -= computer_
         print(f"Компьютер взял {computer_move} камней. Осталось {count} камней.")
 
         if count == 1:
