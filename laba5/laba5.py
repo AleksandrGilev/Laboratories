@@ -13,6 +13,18 @@ def game():
                 continue
             else:
                 break
+#ifnbodfnbodfnboefnboerrnboerbnoerbnjoernbijer bierbioerboineroibneroibneribniernboiernboiernboerbo
+
+
+
+
+
+
+
+
+
+
+
 
         count -= user_move
         print(f"Осталось {count} камней")
