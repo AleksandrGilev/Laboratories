@@ -1,6 +1,7 @@
 def n_el(first_el, count, diff):
     return first_el + diff * (count - 1)
 
+
 while 1:
     try:
         first_el = int(input('Введите первый элемент:'))
@@ -25,6 +26,5 @@ while 1:
         continue
     else:
         break
-
 
 print(diff, '-й элемент арифметической прогрессии равен: ', n_el(first_el, count, diff), sep='')

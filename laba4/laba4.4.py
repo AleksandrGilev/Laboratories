@@ -1,7 +1,9 @@
 from math import *
 
+
 def nok(ch_f, ch_s):
     return (ch_f * ch_s) // gcd(ch_f, ch_s)
+
 
 while 1:
     try:

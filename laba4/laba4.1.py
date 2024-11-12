@@ -1,11 +1,13 @@
 def n_el_g(b, q, n):
-    return b * q ** n-1
+    return b * q ** n - 1
+
 
 def summa_n_el(b, q, n):
     if q == 1:
         return n * b
     else:
         return (b * (1 - q ** n)) / (1 - q)
+
 
 while 1:
     try:

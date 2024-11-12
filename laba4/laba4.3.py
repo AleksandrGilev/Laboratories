@@ -7,5 +7,4 @@ while 1:
     else:
         break
 
-
 print(dec_ch, 'в двоичной системе счисления равно', bin(dec_ch)[2:])
