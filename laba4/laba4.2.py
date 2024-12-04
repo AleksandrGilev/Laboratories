@@ -1,5 +1,7 @@
 def n_el(first_el, count, diff):
-    return first_el + diff * (count - 1)
+    if count == 1:
+        return first_el
+    return n_el(first_el, count - 1, diff) + diff
 
 
 while 1:
@@ -12,7 +14,7 @@ while 1:
         break
 while 1:
     try:
-        count = input('Введите количество элементов:')
+        count = int(input('Введите количество элементов:'))
     except ValueError:
         print("Введено неверное значение")
         continue
@@ -20,7 +22,7 @@ while 1:
         break
 while 1:
     try:
-        diff = input('Введите разность прогрессии:')
+        diff = int(input('Введите разность прогрессии:'))
     except ValueError:
         print("Введено неверное значение")
         continue

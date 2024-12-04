@@ -5,8 +5,9 @@ set_line_1 = set(line_1)
 set_line_2 = set(line_2)
 
 only_1 = set_line_1 - set_line_2
-
-if only_1 == 0:
+    
+if not only_1:
     print("Таких символов нет")
 else:
     print(f"Уникальные символы {list(only_1)}")
+

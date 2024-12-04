@@ -18,6 +18,7 @@ while True:
     if key in participants:
         print("Такой ключ уже существует!")
         continue
+
     while 1:
         try:
             value = int(input("Введите значение: "))

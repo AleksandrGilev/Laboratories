@@ -1,20 +1,17 @@
-while 1:
+def check(vector):
     try:
-        vector_1 = list(map(float, input("Введите элементы первого вектора через пробел: ").split()))
+        vector = list(map(float, vector))
     except ValueError:
-        print("Ошибка в вводе")
-        continue
-    else:
-        break
+        return False
+    return True
 
-while 1:
-    try:
-        vector_2 = list(map(float, input("Введите элементы второго вектора через пробел: ").split()))
-    except ValueError:
-        print("Ошибка в вводе")
-        continue
-    else:
-        break
+
+vector_1 = list(map(float, input("Введите элементы первого вектора через пробел: ").split()))
+vector_2 = list(map(float, input("Введите элементы второго вектора через пробел: ").split()))
+
+while not check(vector_1) and not check(vector_2):
+    check(vector_1)
+    check(vector_2)
 
 if len(vector_1) != len(vector_2):
     print("Вектора должны быть одинаковой размерности")

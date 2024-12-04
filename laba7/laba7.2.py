@@ -1,29 +1,19 @@
-while 1:
+def chek(a):
     try:
-        K = int(input("Введите количество столбцов первой и строк второй матрицы: "))
+        a = int(a)
     except ValueError:
-        print("Введено неверное значение")
-        continue
-    else:
-        break
+        return False
+    return True
 
-while 1:
-    try:
-        M = int(input("Введите количество строк первой матрицы: "))
-    except ValueError:
-        print("Введено неверное значение")
-        continue
-    else:
-        break
 
-while 1:
-    try:
-        N = int(input("Введите количество столбцов второй матрицы: "))
-    except ValueError:
-        print("Введено неверное значение")
-        continue
-    else:
-        break
+K = int(input("Введите количество столбцов первой и строк второй матрицы: "))
+M = int(input("Введите количество строк первой матрицы: "))
+N = int(input("Введите количество столбцов второй матрицы: "))
+
+while not chek(K) and not chek(M) and not chek(N):
+    chek(K)
+    chek(M)
+    chek(N)
 
 matrix_1 = []
 for m in range(M):

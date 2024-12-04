@@ -15,18 +15,6 @@ def game():
                 continue
             else:
                 break
-#kjbdvknwgopogwe
-
-
-
-
-
-
-
-
-
-
-
 
         count -= user_move
         print(f"Осталось {count} камней")
@@ -35,7 +23,7 @@ def game():
             break
 
         computer_move = random.randint(1, 3)
-        count -= computer_
+        count -= computer_move
         print(f"Компьютер взял {computer_move} камней. Осталось {count} камней.")
 
         if count == 1:
